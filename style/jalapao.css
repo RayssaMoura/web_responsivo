@@ -22,6 +22,24 @@ a:hover {
     opacity: 0.7;
 }
 
+button{
+    height: 30px;
+    border-radius: 16px;
+    width: 40px;
+    font-size: 16px;
+    border: none;
+    margin-left: 1vw;
+    background: white;
+    color: #02465B;
+    transition: 0.3s;
+    letter-spacing: 3px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.7;
+}
+
 nav {
     height: 12vh;
     display: flex;
@@ -44,6 +62,10 @@ nav {
     color: white;
     font-size: 30px;
     font-family: 'Arimo', sans-serif;
+}
+
+.bts{
+    margin-left: 5vw;
 }
 
 .nav-list {
@@ -334,6 +356,15 @@ nav {
     a{
         margin-left: 0vh;
         font-size: 12px;
+    }
+
+    button{
+        font-size: 12px;
+        margin-left: 2vw;
+    }
+
+    .bts{
+        margin-left: 0vw;
     }
 
     .mobile-menu.active{

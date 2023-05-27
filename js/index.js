@@ -42,3 +42,23 @@ class MobileNavbar {
     ".nav-list li",
   );
   mobileNavbar.init();
+
+function FontSize(type){
+  var cls = [".font", ".font2", ".font3", ".font4", ".font5", ".font6", ".font7", ".font8", 
+  ".font9", ".font10", ".font11", ".font12", ".font13", ".font14", ".font15", ".font16", ".font17", 
+  ".font18", ".font19", ".font20", ".font21", ".font22", ".font23", ".font24", ".font25", ".font26", 
+  ".font27", ".font28"];
+
+  cls.forEach(classList=>{
+    var elemento = document.querySelector(classList);
+    var size = window.getComputedStyle(elemento, null).getPropertyValue('font-size');
+    size = parseFloat(size);
+    if (type=="aumentar"){
+      elemento.style.fontSize=(size+5)+"px";
+    }
+  
+    else{
+      elemento.style.fontSize=(size-5)+"px";
+    }
+  })
+}
