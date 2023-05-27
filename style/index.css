@@ -99,7 +99,8 @@ nav {
 @media (max-width: 999px) {
 
     body{
-        overflow-x: auto;
+        overflow-x: hidden;
+        overflow-y: hidden;
     }
 
     .container{
